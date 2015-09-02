@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0DZ-ku-9YJ">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Home Navigation Controller-->
+        <scene sceneID="Idq-ae-wqE">
+            <objects>
+                <navigationController id="0DZ-ku-9YJ" customClass="HomeNavigationController" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dNg-R3-NUR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2NO-Sv-Hht" kind="relationship" relationship="rootViewController" id="QhN-U8-O8V"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rrB-Kq-frF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98.5" y="236.5"/>
+        </scene>
+        <!--iOSModulePreviewHomePage-->
+        <scene sceneID="Q67-6P-gAe">
+            <objects>
+                <tableViewController id="2NO-Sv-Hht" customClass="HomeTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Acl-Ci-tIO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="2NO-Sv-Hht" id="oCH-gZ-oPW"/>
+                            <outlet property="delegate" destination="2NO-Sv-Hht" id="zea-tN-GAR"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="iOSModulePreviewHomePage" id="gYh-Y1-Kkw"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gbJ-l6-Vw5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="639.5" y="236.5"/>
+        </scene>
+    </scenes>
+</document>

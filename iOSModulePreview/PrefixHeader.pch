@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  iOSModulePreview
+//
+//  Created by silent.shi on 15/8/29.
+//  Copyright (c) 2015年 Gao Friend Information and Technology Inc. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef iOSModulePreview_PrefixHeader_pch
+#define iOSModulePreview_PrefixHeader_pch
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "CommonMacroHeader.h"
+    #import <Masonry.h>
+#endif
+
+
+#endif
