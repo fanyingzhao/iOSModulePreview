@@ -19,6 +19,8 @@
 		7F0BCDB11B9697A5003DDD65 /* CallOutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0BCDB01B9697A5003DDD65 /* CallOutView.m */; };
 		7F0BCDBB1B96A575003DDD65 /* MapTrackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0BCDBA1B96A575003DDD65 /* MapTrackViewController.m */; };
 		7F0BCDC11B96B4C9003DDD65 /* CodeScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0BCDC01B96B4C9003DDD65 /* CodeScanViewController.m */; };
+		7F0BCDC51B96D07E003DDD65 /* BarCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0BCDC41B96D07E003DDD65 /* BarCode.m */; };
+		7F0BCDC91B96E582003DDD65 /* PreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0BCDC81B96E582003DDD65 /* PreviewView.m */; };
 		7F2056AB1B91698F004A7A12 /* HomeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2056AA1B91698F004A7A12 /* HomeNavigationController.m */; };
 		7F2056AE1B9169B7004A7A12 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2056AD1B9169B7004A7A12 /* HomeTableViewController.m */; };
 		FC6B67C45BBA7C3EF4AE5136 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6F0EA7B0890AEDCF2D3E415 /* libPods.a */; };
@@ -61,6 +63,10 @@
 		7F0BCDBA1B96A575003DDD65 /* MapTrackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapTrackViewController.m; sourceTree = "<group>"; };
 		7F0BCDBF1B96B4C9003DDD65 /* CodeScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeScanViewController.h; sourceTree = "<group>"; };
 		7F0BCDC01B96B4C9003DDD65 /* CodeScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeScanViewController.m; sourceTree = "<group>"; };
+		7F0BCDC31B96D07E003DDD65 /* BarCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarCode.h; sourceTree = "<group>"; };
+		7F0BCDC41B96D07E003DDD65 /* BarCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarCode.m; sourceTree = "<group>"; };
+		7F0BCDC71B96E582003DDD65 /* PreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewView.h; sourceTree = "<group>"; };
+		7F0BCDC81B96E582003DDD65 /* PreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewView.m; sourceTree = "<group>"; };
 		7F2056A71B915E4F004A7A12 /* CommonMacroHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMacroHeader.h; sourceTree = "<group>"; };
 		7F2056A91B91698F004A7A12 /* HomeNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeNavigationController.h; sourceTree = "<group>"; };
 		7F2056AA1B91698F004A7A12 /* HomeNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeNavigationController.m; sourceTree = "<group>"; };
@@ -172,6 +178,8 @@
 		7F087F071B9572E7005714A9 /* CodeScan */ = {
 			isa = PBXGroup;
 			children = (
+				7F0BCDC61B96E561003DDD65 /* Views */,
+				7F0BCDC21B96D065003DDD65 /* Models */,
 				7F0BCDBE1B96B4AB003DDD65 /* Controllers */,
 			);
 			path = CodeScan;
@@ -240,6 +248,24 @@
 				7F0BCDC01B96B4C9003DDD65 /* CodeScanViewController.m */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7F0BCDC21B96D065003DDD65 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7F0BCDC31B96D07E003DDD65 /* BarCode.h */,
+				7F0BCDC41B96D07E003DDD65 /* BarCode.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7F0BCDC61B96E561003DDD65 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7F0BCDC71B96E582003DDD65 /* PreviewView.h */,
+				7F0BCDC81B96E582003DDD65 /* PreviewView.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		7F2056A81B916966004A7A12 /* Home */ = {
@@ -398,11 +424,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F087F251B95B699005714A9 /* CustomAnnotationView.m in Sources */,
+				7F0BCDC91B96E582003DDD65 /* PreviewView.m in Sources */,
 				7F087F0E1B9574A1005714A9 /* MapAnchorViewController.m in Sources */,
 				7F0BCDBB1B96A575003DDD65 /* MapTrackViewController.m in Sources */,
 				7F2056AE1B9169B7004A7A12 /* HomeTableViewController.m in Sources */,
 				7F0BCDC11B96B4C9003DDD65 /* CodeScanViewController.m in Sources */,
 				7F03853B1B915A0800452905 /* AppDelegate.m in Sources */,
+				7F0BCDC51B96D07E003DDD65 /* BarCode.m in Sources */,
 				7F0385381B915A0800452905 /* main.m in Sources */,
 				7F2056AB1B91698F004A7A12 /* HomeNavigationController.m in Sources */,
 				7F0BCDAE1B9695E1003DDD65 /* AnnotationModel.m in Sources */,

@@ -9,6 +9,7 @@
 #import "HomeTableViewController.h"
 #import "MapAnchorViewController.h"
 #import "MapTrackViewController.h"
+#import "CodeScanViewController.h"
 
 @interface HomeTableViewController ()
 
@@ -85,7 +86,9 @@
             break;
         case 2:
         {
-        
+            CodeScanViewController  *codeScan=[[CodeScanViewController alloc] init];
+            codeScan.title=@"CodeScan";
+            [self.navigationController pushViewController:codeScan animated:YES];
         }
             break;
         default:
