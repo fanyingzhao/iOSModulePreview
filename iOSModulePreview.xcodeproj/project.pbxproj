@@ -23,6 +23,7 @@
 		7F0BCDC91B96E582003DDD65 /* PreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0BCDC81B96E582003DDD65 /* PreviewView.m */; };
 		7F2056AB1B91698F004A7A12 /* HomeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2056AA1B91698F004A7A12 /* HomeNavigationController.m */; };
 		7F2056AE1B9169B7004A7A12 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2056AD1B9169B7004A7A12 /* HomeTableViewController.m */; };
+		D1B502351BA1D2930059CC5F /* UIImage+FY.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B502341BA1D2930059CC5F /* UIImage+FY.m */; };
 		FC6B67C45BBA7C3EF4AE5136 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6F0EA7B0890AEDCF2D3E415 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,9 @@
 		7F2056AA1B91698F004A7A12 /* HomeNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeNavigationController.m; sourceTree = "<group>"; };
 		7F2056AC1B9169B7004A7A12 /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = "<group>"; };
 		7F2056AD1B9169B7004A7A12 /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
+		D1B502331BA1D2930059CC5F /* UIImage+FY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FY.h"; sourceTree = "<group>"; };
+		D1B502341BA1D2930059CC5F /* UIImage+FY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FY.m"; sourceTree = "<group>"; };
+		D1CBA45E1BA1D54800B8D9A3 /* FYMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYMacro.h; sourceTree = "<group>"; };
 		F6F0EA7B0890AEDCF2D3E415 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -168,6 +172,7 @@
 		7F087F061B9572E7005714A9 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				D1B502281BA1D1450059CC5F /* Tool */,
 				7F087F081B9572E7005714A9 /* MapAnchor */,
 				7F087F091B9572E7005714A9 /* MapTrack */,
 				7F087F071B9572E7005714A9 /* CodeScan */,
@@ -277,6 +282,48 @@
 				7F2056AD1B9169B7004A7A12 /* HomeTableViewController.m */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		D1B502281BA1D1450059CC5F /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				D1CBA45D1BA1D54800B8D9A3 /* Macro */,
+				D1B502301BA1D22F0059CC5F /* Category */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		D1B502301BA1D22F0059CC5F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				D1B502311BA1D22F0059CC5F /* UIImage */,
+				D1B502321BA1D22F0059CC5F /* UIView */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		D1B502311BA1D22F0059CC5F /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				D1B502331BA1D2930059CC5F /* UIImage+FY.h */,
+				D1B502341BA1D2930059CC5F /* UIImage+FY.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		D1B502321BA1D22F0059CC5F /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		D1CBA45D1BA1D54800B8D9A3 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				D1CBA45E1BA1D54800B8D9A3 /* FYMacro.h */,
+			);
+			path = Macro;
 			sourceTree = "<group>";
 		};
 		ED3E50154B7E8BEFC3C503ED /* Pods */ = {
@@ -434,6 +481,7 @@
 				7F0385381B915A0800452905 /* main.m in Sources */,
 				7F2056AB1B91698F004A7A12 /* HomeNavigationController.m in Sources */,
 				7F0BCDAE1B9695E1003DDD65 /* AnnotationModel.m in Sources */,
+				D1B502351BA1D2930059CC5F /* UIImage+FY.m in Sources */,
 				7F0BCDB11B9697A5003DDD65 /* CallOutView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
